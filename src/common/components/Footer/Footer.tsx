@@ -17,7 +17,7 @@ export const Footer = () => {
                 </div>
                 <div className={s.social}>
                     <a
-                        href="https://www.linkedin.com/in/ilja-prihach-298204172"
+                        href="https://www.linkedin.com/in/ilya-prihach-84185439a/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className={s.socialLink}
