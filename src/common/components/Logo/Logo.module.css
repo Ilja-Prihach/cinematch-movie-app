@@ -1,31 +1,60 @@
 .logoLink {
-    display: flex;
+    display: inline-flex;
     align-items: center;
+    gap: 0.55rem;
+    color: inherit;
+    font-weight: 800;
+    letter-spacing: -0.04em;
     text-decoration: none;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
 .logoLink:hover {
-    opacity: 0.8;
+    opacity: 0.85;
+    transform: translateY(-1px);
 }
 
-.logo {
-    width: auto;
-    transition: transform 0.2s ease;
+.mark {
+    display: inline-grid;
+    place-items: center;
+    aspect-ratio: 1;
+    border-radius: 30%;
+    color: #032541;
+    background: linear-gradient(135deg, #90cea1, #01b4e4);
+    font-weight: 900;
+    line-height: 1;
 }
 
-.logoLink:hover .logo {
-    transform: scale(1.05);
+.wordmark {
+    line-height: 1;
 }
 
 .small {
-    height: 25px;
+    font-size: 1rem;
+}
+
+.small .mark {
+    width: 1.55rem;
 }
 
 .medium {
-    height: 35px;
+    font-size: 1.25rem;
+}
+
+.medium .mark {
+    width: 2rem;
 }
 
 .large {
-    height: 50px;
+    font-size: 1.65rem;
+}
+
+.large .mark {
+    width: 2.6rem;
+}
+
+@media (max-width: 480px) {
+    .medium .wordmark {
+        display: none;
+    }
 }

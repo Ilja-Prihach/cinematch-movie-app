@@ -37,7 +37,7 @@ export const HeroSection = () => {
 
             <div className={s.container}>
                 <div className={s.content}>
-                    <h1 className={s.title}>Welcome to MovieDB</h1>
+                    <h1 className={s.title}>Find your next favorite movie</h1>
                     <p className={s.subtitle}>
                         Discover millions of movies, TV shows and people. Explore now.
                     </p>

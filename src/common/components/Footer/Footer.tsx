@@ -12,12 +12,15 @@ export const Footer = () => {
                 </div>
                 <div className={s.text}>
                     <p>
-                        © 2025 Kinopoisk Demo · Data courtesy of TMDB.
+                        © {new Date().getFullYear()} CineMatch
+                    </p>
+                    <p>
+                        This product uses the TMDB API but is not endorsed or certified by TMDB.
                     </p>
                 </div>
                 <div className={s.social}>
                     <a
-                        href="https://www.linkedin.com/in/ilya-prihach-84185439a/"
+                        href="https://www.linkedin.com/in/ilya-prihach/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className={s.socialLink}

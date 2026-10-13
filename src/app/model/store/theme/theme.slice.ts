@@ -8,7 +8,7 @@ interface ThemeState {
 const getInitialTheme = (): boolean => {
     if (typeof window === 'undefined') return false;
 
-    const saved = localStorage.getItem('tmdb-theme');
+    const saved = localStorage.getItem('cinematch-theme');
     if (saved) return JSON.parse(saved);
 
     return window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -24,11 +24,11 @@ export const themeSlice = createSlice({
     reducers: {
         toggleTheme: (state) => {
             state.isDark = !state.isDark;
-            localStorage.setItem('tmdb-theme', JSON.stringify(state.isDark));
+            localStorage.setItem('cinematch-theme', JSON.stringify(state.isDark));
         },
         setTheme: (state, action: { payload: boolean }) => {
             state.isDark = action.payload;
-            localStorage.setItem('tmdb-theme', JSON.stringify(state.isDark));
+            localStorage.setItem('cinematch-theme', JSON.stringify(state.isDark));
         },
     },
 });

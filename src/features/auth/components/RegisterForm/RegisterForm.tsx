@@ -97,7 +97,7 @@ export const RegisterForm = () => {
             <div className={s.card}>
                 <div className={s.header}>
                     <div className={s.logo}>🎬</div>
-                    <h1 className={s.title}>Join MovieDB</h1>
+                    <h1 className={s.title}>Join CineMatch</h1>
                     <p className={s.subtitle}>Create your account to save favorites and get personalized recommendations</p>
                 </div>
 
